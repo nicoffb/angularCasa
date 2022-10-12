@@ -1,17 +1,23 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { StarComponent } from './componentes/star/star.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialImportsModule } from './material-imports/material-imports.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PersonajesComponent } from './componentes/personajes/personajes.component';
+import { PeliculasComponent } from './componentes/peliculas/peliculas.component';
+import { EspeciesComponent } from './componentes/especies/especies.component';
+import { NavesComponent } from './componentes/naves/naves.component';
+import { VehiculosComponent } from './componentes/vehiculos/vehiculos.component';
+import { PlanetasComponent } from './componentes/planetas/planetas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StarComponent
+    PersonajesComponent,
+    PeliculasComponent,
+    EspeciesComponent,
+    NavesComponent,
+    VehiculosComponent,
+    PlanetasComponent
   ],
   imports: [
     MaterialImportsModule,
