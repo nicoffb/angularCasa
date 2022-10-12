@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StarComponent } from './componentes/star/star.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialImportsModule } from './material-imports/material-imports.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -12,9 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     StarComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
+    MaterialImportsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

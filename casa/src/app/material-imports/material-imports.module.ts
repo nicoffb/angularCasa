@@ -35,12 +35,16 @@ import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {BrowserModule} from '@angular/platform-browser';
+import { AppRoutingModule } from '../app-routing.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
 @NgModule({
   declarations: [],
   imports: [
+    NgbModule,
+    AppRoutingModule,
     CommonModule,
     BrowserModule,
     HttpClientModule,
@@ -79,6 +83,8 @@ import {BrowserModule} from '@angular/platform-browser';
   ],
 
   exports: [
+    NgbModule,
+    AppRoutingModule,
     CommonModule,
     BrowserModule,
     HttpClientModule,
@@ -113,7 +119,8 @@ import {BrowserModule} from '@angular/platform-browser';
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule]
+    MatPaginatorModule
+  ]
 
 })
 export class MaterialImportsModule { }
