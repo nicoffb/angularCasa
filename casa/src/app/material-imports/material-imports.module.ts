@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+//Angular Material Components
+import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatButtonModule} from '@angular/material/button';
@@ -31,6 +34,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {BrowserModule} from '@angular/platform-browser';
 
 
 
@@ -38,6 +42,9 @@ import {MatPaginatorModule} from '@angular/material/paginator';
   declarations: [],
   imports: [
     CommonModule,
+    BrowserModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
     MatCheckboxModule,
     MatCheckboxModule,
     MatButtonModule,
@@ -70,7 +77,12 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatSortModule,
     MatPaginatorModule
   ],
-  exports: [CommonModule,
+
+  exports: [
+    CommonModule,
+    BrowserModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
     MatCheckboxModule,
     MatCheckboxModule,
     MatButtonModule,
