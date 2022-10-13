@@ -1,1 +1,15 @@
-<p>planetas works!</p>
+<h1>Planetas de Star Wars</h1>
+
+<!-- <ul>
+  <li *ngFor="let gente of listaGente">{{gente.name}}</li>
+</ul>
+ -->
+<div class="contenedor">
+<mat-card class="example-card" *ngFor="let planeta of listaPlanetas">Planetas
+  <mat-card-header>
+    <mat-card-title>{{planeta.name}}</mat-card-title>
+    <mat-card-subtitle>{{planeta.diameter}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1920px-Star_Wars_Logo.svg.png" >
+</mat-card>
+</div>

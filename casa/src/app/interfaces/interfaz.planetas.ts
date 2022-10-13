@@ -4,10 +4,10 @@ export interface PlanetasRespuesta {
     count:    number;
     next:     string;
     previous: null;
-    results:  Planet[];
+    results:  Planeta[];
 }
 
-export interface Planet {
+export interface Planeta {
     name:            string;
     rotation_period: string;
     orbital_period:  string;
